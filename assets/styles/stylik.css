@@ -1,0 +1,833 @@
+/* Основные стили для фиолетовых и нежных тонов */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffdfd;
+    color: #5DA9E9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #5598fc;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cee3f1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: #B0D8FF;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Контейнер и отступы */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color:#B0D8FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5DA9E9;
+    border-radius: 0% 0% 5px 5px;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.header-right a:hover {
+    color: #006eff;
+}
+
+.header-right .active {
+    color: #1a1a1a;
+}
+
+
+/* Стили для разделов */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "•";
+    color: #004e82;
+    margin-right: 8px;
+}
+
+/* Кнопка призыва к действию */
+.cta {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #0d72ad;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background-color: #2bb7e2;
+}
+
+/* Постскриптум */
+.ps {
+    font-style: italic;
+    color: #2e32ff67;
+    margin-top: 20px;
+}
+
+
+
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 955px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .testimonial-content {
+    max-width: 500px;
+  }
+  
+  .testimonial-quote {
+    color: #4A94FF;
+    margin-bottom: 20px;
+  }
+  
+  .quote-icon {
+    font-size: 36px;
+    vertical-align: middle;
+  }
+  
+  .quote-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2E363E;
+    margin: 0;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #2E363E;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .read-more-link {
+    font-size: 14px;
+    color: #4A94FF;
+    text-decoration: none;
+    border-bottom: 1px dotted #4A94FF;
+  }
+  
+  .read-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  .testimonial-author {
+    text-align: center;
+  }
+  
+  .author-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F2F6FA;
+  }
+  
+  .author-details {
+    margin-top: 15px;
+  }
+  
+  .author-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E363E;
+    margin: 0;
+  }
+  
+  .author-location {
+    font-size: 14px;
+    color: #A6AEB6;
+    margin: 5px 0 0;
+  }
+
+  
+
+
+
+  
+  
+  .order-form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  }
+  
+  .form-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2E363E;
+  }
+  
+  .form-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #556677;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    flex: 1;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #A6AEB6;
+    font-size: 18px;
+  }
+  
+  .phone-input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #D9E2EC;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2E363E;
+  }
+  
+  .phone-input::placeholder {
+    color: #A6AEB6;
+  }
+  
+  .order-button {
+    background: #B0D8FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .order-button:hover {
+    background: #2b89e2;
+  }
+  
+  .agreement {
+    font-size: 12px;
+    color: #A6AEB6;
+  }
+  
+  .agreement a {
+    color: #4A94FF;
+    text-decoration: none;
+    border-bottom: 1px dotted #4A94FF;
+  }
+  
+  .agreement a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .team-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .team-header {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .team-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bbb;
+    margin-bottom: 5px;
+  }
+  
+  .team-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .team-title span {
+    color: #B0D8FF;
+  }
+  
+  .team-description {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 20px;
+  }
+  
+  .call-button {
+    background-color: #fff;
+    color: #B0D8FF;
+    border: 2px solid #B0D8FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .call-button:hover {
+    background-color: #B0D8FF;
+    color: white;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .member-photo {
+    width: 100%;
+    padding-top: 120%;
+    background-color: #B0D8FF;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .member-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .member-experience {
+    font-size: 14px;
+    color: #999;
+  }
+  
+
+/* Эффект плавной загрузки */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стиль хедера */
+
+/* Скрытие хедера при прокрутке */
+.header.hide {
+    top: -100px;
+}
+
+
+  /* Секция "Почему выбирают нас" */
+  .why-us {
+    position: relative;
+    background-color: #B0D8FF; /* Резервный фон */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Чтобы псевдоэлемент не выходил за границы блока */
+}
+
+
+.why-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.feature-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+
+
+/* Секция "Стоимость" */
+.pricing {
+    background-color: #B0D8FF;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pricing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 2px solid #B0D8FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.highlighted {
+    background-color: #B0D8FF;
+    color: #fff;
+}
+
+.plan-name {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5DA9E9;
+    margin-bottom: 15px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.features li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.choose-plan {
+    background-color: #5DA9E9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choose-plan:hover {
+    background-color: #451d6a;
+}
+
+
+/* Секция "Лид" */
+.mental-health {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.171), rgba(38, 204, 255, 0.205)), url('/assets/img/mental_in/output4k16295.png') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.mental-health .content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.mental-health .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-out;
+    color: white;
+}
+
+.descriptio {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+    animation: fadeIn 3s ease-out;
+    color: white;
+    text-align: left;
+}
+
+.mental_health .btn-primary {
+    background-color: #2d608a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mental_health .btn-primary:hover {
+    background-color: #1d5b6a;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Общие стили для блока опроса */
+.survey-block {
+    background-color: #eaf2fb; /* Мягкий синий фон */
+    color: #3e4e66; /* Темно-синий цвет текста для контраста */
+    padding: 20px;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.survey-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.survey-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.survey-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #020079; /* Мягкий синий для текста */
+}
+
+.survey-text ul, .survey-text ol {
+    margin-left: 20px;
+}
+
+.survey-text li {
+    margin-bottom: 10px;
+}
+
+.survey-text strong {
+    color: #3e5a7a; /* Темный акцент для выделенных слов */
+}
+
+.survey-container {
+    background-color: #eaf2fb; /* Мягкий синий фон */
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid #4c6d94; /* Бордер вокруг контейнера */
+    margin: 20px 0;
+}
+
+.survey-subtitle {
+    font-size: 20px;
+    color: #4c6d94; /* Цвет подзаголовка */
+    margin-bottom: 10px;
+}
+
+.survey-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a6e91;
+    margin-bottom: 15px;
+}
+
+.survey-list {
+    font-size: 16px;
+    color: #4a6e91;
+    padding-left: 20px;
+}
+
+.survey-list li {
+    margin-bottom: 10px;
+}
+
+.survey-text strong {
+    color: #3e5a7a; /* Темный акцент для выделенных слов */
+}
+
+@media (max-width: 768px) {
+    .survey-container {
+        padding: 15px;
+    }
+
+    .survey-subtitle {
+        font-size: 18px;
+    }
+
+    .survey-text {
+        font-size: 14px;
+    }
+}
+
+
